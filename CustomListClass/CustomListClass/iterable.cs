@@ -9,14 +9,17 @@ namespace CustomListClass
     class iterable<T>
     {
 
+        List<string> typesOfShoes;
+        List<int> numberOfShoes;
         T shoes;
 
         public iterable(T itemToPrint)
         {
             shoes = itemToPrint;
+
         }
 
-        public void ArrayList()
+        public void shoeList()
         {
             List<string> types = new List<string>();
             types.Add("classy");
@@ -27,6 +30,10 @@ namespace CustomListClass
             types.Add("summer");
 
             Console.WriteLine("I love my {0} & {1} shoes.", types[0], types[2]);
+        }
+
+        public void addShoes()
+        {
 
         }
     }
